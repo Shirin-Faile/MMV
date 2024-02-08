@@ -3,11 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="jquery-3.7.1.js" defer></script>
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./scripts/jquery-3.7.1.js" defer></script>
+    <script src="./scripts/script.js" defer></script>
     <title>Monster Manual Viewer</title>
 </head>
 <body>
+    <header>
+        <h1>D&D Monsters</h1>
+        <div class="logo">
+            <a href="./index.html"><img src="./images/home.ico"></a>
+        </div>
+    </header>
+
+    <section class="monster-list">
+        <div class="search">
+            <label for="monster-search" id="monster-serach-label">Enter a monster type</label>
+            <select id="monster-search"></select>
+            <button class="monster-search">Search</button>
+        </div>
+    </section>
+
+    <section class="sort">
+        <div class="sort-container">
+            <a id="shuffle"></a>
+            <div class="sort-by"></div>
+        </div>
+    </section>
+
+    <ul class="monsters">
+        <li></li>
+        <li></li>
+    </ul>
+
+    <div class="load-more">
+        <a id="loadMore"></a>
+    </div>
+
+    <footer>
+        <div class="copyright">
+            <p>&copy; 2024 MonsterViewer. All Rights Reserved.</p>
+        </div>
+    </footer>
     
 </body>
 </html>
